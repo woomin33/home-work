@@ -165,7 +165,7 @@ __*이텔릭체*와 두껍게__
 
 [WoominImage]: ../assets/images/woomin_emoji.jpg "우민의 깃허브로 이동합니다"
 
-<img src="../assets//images/lighting.jpg" width="50%" height="50%">
+<img src="../assets//images/lighting.jpg" width="50%" height=auto>
 
 이미지의 크기와 비율을 조정하고 싶다면 `<img>`태그를 사용해야 한다.  
 특정 환경에서는 HTML없이 이미지조절이 가능하지만 권장되지 않는다.
