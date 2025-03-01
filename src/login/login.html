@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/login.css" />
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="login-wrapper">
+        <div class="brand">
+          <a href="/" class="logo">
+            <img src="./assets/naver-logo.svg" alt="" />
+          </a>
+        </div>
+        <form action="/" class="form-login">
+          <fieldset>
+            <legend class="sr-only">검색 폼</legend>
+            <div class="form-wrapper">
+              <div class="input">
+                <label for="keyword" class="sr-only">ID 입력창</label>
+                <input
+                  type="email"
+                  id="user-id"
+                  name="user-id"
+                  required
+                  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                  placeholder="아이디(이메일)"
+                />
+                <p class="error-message">아이디는 이메일 형식이 아닙니다.</p>
+              </div>
+              <div class="input">
+                <label for="keyword" class="sr-only">PASSWORD 입력창</label>
+                <input
+                  type="password"
+                  id="user-password"
+                  name="user-password"
+                  required
+                  placeholder="비밀번호"
+                  minlength="10"
+                />
+                <p class="error-message">
+                  비밀번호는 10자리 이상 입력해주세요.
+                </p>
+              </div>
+              <button type="submit" class="button button-login">
+                <span class="sr-only">로그인버튼</span>
+                로그인
+              </button>
+              <div class="option-wrapper">
+                <div class="check-container">
+                  <input type="checkbox" id="check" />
+                  <label for="check" class="checkbox-label"
+                    >로그인 상태유지</label
+                  >
+                </div>
+                <div class="ip-option-box" hidden>
+                  <a href="./pages/ip_security.html" target="_blank">IP 보안</a>
+                  <input type="checkbox" id="on-off" />
+                  <label for="on-off" class="on-off-label"></label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
