@@ -1,0 +1,87 @@
+@import "./reset.css";
+@import "./theme.css";
+@import "./base.css";
+
+.card-wrapper {
+  height: var(--size);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white);
+  padding-top: var(--extra-large-spacing);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--small-spacing);
+
+  @media (max-width: 1024px) {
+    padding-top: var(--large-spacing);
+  }
+
+  &.dark {
+    color: var(--black);
+  }
+
+  &.light {
+    color: var(--white);
+  }
+
+  .card-title {
+    font-size: var(--extra-large-text);
+    font-weight: bold;
+  }
+
+  .card-subtitle {
+    font-size: var(--medium-text);
+    line-height: var(--line-normal);
+    text-align: center;
+  }
+
+  .card-callout {
+    font-size: var(--small-text);
+    color: var(--gray);
+  }
+
+  .button-container {
+    display: flex;
+    gap: var(--small-spacing);
+  }
+}
+
+.btn {
+  padding: var(--x-small-spacing);
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 64px;
+  font-size: var(--x-small-text);
+  transition: 0.4s;
+
+  &.blue {
+    color: white;
+    background-color: var(--blue-300);
+  }
+  &.black {
+    color: var(--white);
+    background-color: var(--black);
+  }
+
+  &.btn-reverse {
+    background-color: transparent;
+
+    &.blue {
+      color: var(--blue-300);
+      border-color: var(--blue-300);
+    }
+    &.blue:hover {
+      color: var(--white);
+      background-color: var(--blue-300);
+    }
+    &.black {
+      color: var(--black);
+      border-color: var(--black);
+    }
+    &.black:hover {
+      color: var(--white);
+      background-color: var(--black);
+    }
+  }
+}
